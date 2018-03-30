@@ -1,0 +1,39 @@
+{
+    "name": "alt-three/uuid",
+    "description": "A UUID To Integer Converter",
+    "keywords": ["UUID", "Alt Three"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alt Three",
+            "email": "support@alt-three.com"
+        }
+    ],
+    "require": {
+        "php-64bit": "^7.1.3"
+    },
+    "require-dev": {
+        "graham-campbell/analyzer": "^2.0",
+        "phpunit/phpunit": "^6.5|^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "AltThree\\Uuid\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AltThree\\Tests\\Uuid\\": "tests/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
