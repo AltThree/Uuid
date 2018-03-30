@@ -5,25 +5,9 @@ sudo: false
 matrix:
   include:
     - php: 7.1
-      env:
-        - SYMFONY_VERSION=^3.0
-        - PHPUNIT_VERSION=^6.5
-    - php: 7.1
-      env:
-        - SYMFONY_VERSION=^4.0
-        - PHPUNIT_VERSION=^7.0
     - php: 7.2
-      env:
-        - SYMFONY_VERSION=^3.0
-        - PHPUNIT_VERSION=^6.5
-    - php: 7.2
-      env:
-        - SYMFONY_VERSION=^4.0
-        - PHPUNIT_VERSION=^7.0
 
 install:
-  - composer require "symfony/lts:${SYMFONY_VERSION}" --no-update -n
-  - composer require "phpunit/phpunit:${PHPUNIT_VERSION}" --dev --no-update -n
   - travis_retry composer install --no-suggest --prefer-dist -n -o
 
 script:
