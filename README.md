@@ -2,8 +2,7 @@
 
 A UUID to 64-bit signed integer converter.
 
-This is a lossy conversion, performed by xoring the both halves.
-
+This is a lossy conversion, performed by xoring both halves.
 
 ## Installation
 
@@ -15,11 +14,9 @@ To get the latest version, simply require the project using [Composer](https://g
 $ composer require alt-three/uuid
 ```
 
-
 ## Security
 
 If you discover a security vulnerability within this package, please e-mail us at support@alt-three.com. All security vulnerabilities will be promptly addressed.
-
 
 ## License
 
