@@ -8,8 +8,6 @@ matrix:
     - php: 7.2
 
 install:
-  - composer require "symfony/lts:${SYMFONY_VERSION}" --no-update -n
-  - composer require "phpunit/phpunit:${PHPUNIT_VERSION}" --dev --no-update -n
   - travis_retry composer install --no-suggest --prefer-dist -n -o
 
 script:
