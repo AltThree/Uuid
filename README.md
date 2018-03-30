@@ -2,7 +2,7 @@
 
 A UUID to 64-bit signed integer converter.
 
-This is a lossy conversion, performed by xoring both halves of the UUID.
+UUIDs represent 128 bits of data, thus this is a lossy conversion, performed by xoring both halves of the UUID.
 
 
 ## Installation
