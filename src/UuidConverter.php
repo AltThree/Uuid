@@ -31,7 +31,7 @@ final class UuidConverter
      */
     public static function convert(string $uuid)
     {
-        // convert to 16 byte binary represention
+        // convert to 16 byte binary representation
         $bin = hex2bin(str_replace(['{', '-', '}'], '', $uuid));
 
         // xor first half with second to give 8 bytes
